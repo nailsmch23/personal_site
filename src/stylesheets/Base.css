@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Page {
+  height: 100vh;
+}
+
+.Intro {
+  height: 100%;
+  background-color: mediumaquamarine;
+}
+
+.Software {
+  height: 100%;
+  background-color: darkolivegreen;
+}
+
+.Data {
+  height: 100%;
+  background-color: palevioletred;
+}
+
+.Web {
+  height: 100%;
+  background-color: wheat;
+}
+
+.Inner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
