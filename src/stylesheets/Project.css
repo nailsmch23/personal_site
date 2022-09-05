@@ -2,7 +2,7 @@
 .folded_project_container {
     width: 90vw;
     background-color: var(--color2);
-    color: white;
+    color: black;
     padding: 1.5em;
     margin: 2.5em auto;
     border-radius: 0.5em;
@@ -36,7 +36,7 @@
     width: max-content;
     text-decoration: none;
     color: inherit;
-    border: solid thin white;
+    border: solid thin black;
     border-radius: 0.25em;
 }
 

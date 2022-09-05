@@ -2,10 +2,11 @@
 .intro_container {
     height: 100vh;
     /*background-color: var(--grey1);*/
-    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.35);
     background: url("../images/background.jpg") center center no-repeat;
+    background-position-x: -10vw;
     background-size: cover;
-    color: var(--off-white);
+    color: white;
 }
 
 .intro_inner_container {
@@ -41,7 +42,7 @@
 }
 
 .intro_background_image {
-    width: 100%;
+    height: 100vh;
     transform: translateY(-10%);
     /*filter: blur(0.15vmin);*/
     object-fit: cover;

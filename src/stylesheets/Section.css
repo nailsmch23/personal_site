@@ -1,13 +1,15 @@
 
 .section_container {
     height: 45vw;
-    color: white;
+    color: black;
     background-color: var(--color2);
     font-weight: lighter;
+    border: solid thin var(--color1);
 }
 
 .section_container:hover {
     background-color: var(--color3);
+    color: white;
 }
 
 .section_title {
@@ -35,6 +37,7 @@
     grid-template-columns: 1fr 3fr;
     margin: 0 15%;
     text-align: left;
+    font-size: large;
 }
 
 .section_content_container {

@@ -39,14 +39,11 @@
 
 :root {
     --off-white: #ababab;
-    --grey1: #e0e0e0;
-    --grey2: #8d8d8d;
-    --grey3: #f8f8f8;
-    --color1: #F1D8B9;
-    --color2: #57320b;
-    --color3: #391f02;
-    --color4: #545E68;
-    --color5: #A1C4CA;
+    --color1: #FEEFE5;
+    --color2: #b6c7cb;
+    --color3: #2D3047;
+    --color4: #52DEE5;
+    --color5: #150301;
 }
 
 body {
