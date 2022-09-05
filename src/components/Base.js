@@ -1,27 +1,27 @@
 
+// packages
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+//components
+import Main from "./Main";
+import Portfolio from "./Portfolio";
+
+// styles
 import '../stylesheets/Base.css';
-import Intro from "./Intro";
-import Software from "./Software";
-import Data from "./Data";
-import Web from "./Web";
+
 
 function Base() {
+
     return (
-        <div className="App">
-            {[
-                <Intro />,
-                <Software />,
-                <Data />,
-                <Web />
-            ].map( item => {
-                return (
-                    <div className="Page">
-                        { item }
-                    </div>
-                        )
-            })}
-        </div>
+        <Router>
+        <Routes>
+            <Route exact path='/' exact element={<Main />} />
+            <Route path='/portfolio' element={<Portfolio/>} />
+            {/*<Route path='/project' element={<Contact/>} />*/}
+        </Routes>
+        </Router>
     );
 }
 
 export default Base;
+

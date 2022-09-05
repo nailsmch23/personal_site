@@ -1,0 +1,29 @@
+
+.portfolio_title {
+    width: 100%;
+    padding: 1.5em 0;
+    background-color: var(--color3);
+    color: white;
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: lighter;
+}
+
+.portfolio_back_button {
+    position: absolute;
+    top: 1.5em;
+    left: 1em;
+    font-size: xxx-large;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.portfolio_triangle {
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-top: 1em solid var(--color3);
+}
+

@@ -1,0 +1,17 @@
+[
+  {
+    "verbose_name": "Software Engineering",
+    "name": "software",
+    "skills": ["Python", "JavaScript", "Java"]
+  },
+  {
+    "verbose_name": "Data Science",
+    "name": "data",
+    "skills": ["Python", "R", "MATLAB", "SQL", "Pandas"]
+  },
+  {
+    "verbose_name": "Web Development",
+    "name": "web",
+    "skills": ["Python", "JavaScript", "HTML", "CSS", "Django", "React"]
+  }
+]

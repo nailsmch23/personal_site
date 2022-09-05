@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "project_name": "Quotes API",
+    "description": "API and web app meant to save and deliver quotes curated by myself and fellow top minds.",
+    "description_bullets":  ["API functionality to deliver random quotes on command via JSON",
+      "Database created in PostgreSQL, using Django and Heroku",
+      "Custom user interface that allows for CRUD operations on all saved quotes"],
+    "skills": ["Python", "Django", "API", "JSON", "HTML", "CSS"],
+    "image": "Quotes_API",
+    "site_link": "https://github.com/nailsmch23/quotes_api",
+    "code_link": "https://github.com/nailsmch23/quotes_api"
+  },
+  {
+    "id": 2,
+    "project_name": "Menu App",
+    "description": "Mobile menu web app meant for assisting a cocktail bar with ordering and prepping drinks.",
+    "description_bullets":  ["Beautiful web app interface for ordering drinks",
+      "Additional web app interface allowing bartenders to view current orders",
+      "Database created in PostgreSQL, using Django and Heroku",
+      "Recipes stored in the database to allow for quick reference for bartenders when crafting drinks"],
+    "skills": ["JavaScript", "React", "Python", "Django", "API", "HTML", "CSS"],
+    "image": "Menu_App",
+    "site_link": "https://github.com/nailsmch23/gospel-swamp-mobile-menu",
+    "code_link": "https://github.com/nailsmch23/gospel-swamp-mobile-menu"
+  }
+]

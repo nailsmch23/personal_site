@@ -1,0 +1,36 @@
+
+.conclusion_container {
+    height: 20vh;
+}
+
+.conclusion_inner_container {
+    font-size: small;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.conclusion_text {
+}
+
+.conclusion_buttons_container {
+    display: grid;
+    width: max-content;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    margin: 0 auto 3%;
+}
+
+.conclusion_button {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 0.2em;
+    font-size: medium;
+    text-decoration: none;
+    color: inherit;
+}
+
+.conclusion_button_image {
+    height: 1em;
+}
+

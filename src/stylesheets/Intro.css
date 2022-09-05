@@ -1,0 +1,87 @@
+
+.intro_container {
+    height: 100vh;
+    /*background-color: var(--grey1);*/
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+    background: url("../images/northlakesouthlake/i1.jpg") center center no-repeat;
+    background-size: cover;
+    color: var(--off-white);
+}
+
+.intro_inner_container {
+    position: relative;
+    width: max-content;
+    top: 45%;
+    transform: translateY(-50%);
+    left: calc(35% + 115px);
+}
+
+.intro_text {
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    text-align: left;
+    font-size: 4vh;
+    font-weight: lighter;
+}
+
+.intro_name {
+    opacity: 0;
+    font-size: 11vh;
+    font-weight: lighter;
+    animation: fadeIn 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.intro_background_image {
+    width: 100%;
+    transform: translateY(-10%);
+    /*filter: blur(0.15vmin);*/
+    object-fit: cover;
+}
+
+.intro_background_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(86, 89, 89, 0.45);
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
+}
+
+.intro_me_image {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    left: calc(50% - 115px);
+    width: 230px;
+    border-radius: 115px;
+    animation: slidein 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    /*transition: top ease 0.5s;*/
+}
+
+@keyframes slidein {
+  from { left: calc(50% - 115px); }
+  to { left: calc(30% - 115px); }
+}
+
+.intro_continue_container {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}

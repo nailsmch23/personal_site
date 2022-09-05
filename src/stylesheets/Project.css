@@ -1,0 +1,73 @@
+
+.folded_project_container {
+    width: 90vw;
+    background-color: var(--color2);
+    color: white;
+    padding: 1.5em;
+    margin: 2.5em auto;
+    border-radius: 0.5em;
+}
+.project_title_container {
+    display: grid;
+    cursor: pointer;
+    grid-template-columns: 3fr 1fr;
+}
+
+.project_title {
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.project_arrow {
+    font-size: xx-large;
+    font-weight: lighter;
+    text-align: right;
+    padding: 0.5em;
+}
+
+.project_skills {
+    margin: 1em 0;
+}
+
+.project_button {
+    display: inline-block;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: max-content;
+    text-decoration: none;
+    color: inherit;
+    border: solid thin white;
+    border-radius: 0.25em;
+}
+
+.project_button:hover {
+    background-color: var(--color3);
+}
+
+.project_site_button {
+
+}
+
+.project_code_button {
+
+}
+
+.project_description {
+    margin: 1em 0;
+    font-size: large;
+    font-weight: lighter;
+}
+
+.project_description_bullet_list {
+
+}
+
+.project_description_bullet {
+
+}
+
+.project_image {
+    width: 70vw;
+    margin: 2em 10vw;
+}
+

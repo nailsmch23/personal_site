@@ -1,70 +1,74 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-
-.Page {
-  height: 100vh;
+:root {
+    --off-white: #ababab;
+    --grey1: #e0e0e0;
+    --grey2: #8d8d8d;
+    --grey3: #f8f8f8;
+    --color1: #F1D8B9;
+    --color2: #57320b;
+    --color3: #391f02;
+    --color4: #545E68;
+    --color5: #A1C4CA;
 }
 
-.Intro {
-  height: 100%;
-  background-color: mediumaquamarine;
+body {
+    background-color: var(--color1);
 }
 
-.Software {
-  height: 100%;
-  background-color: darkolivegreen;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.Data {
-  height: 100%;
-  background-color: palevioletred;
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color1);
 }
 
-.Web {
-  height: 100%;
-  background-color: wheat;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
 
-.Inner {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
-
