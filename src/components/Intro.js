@@ -1,7 +1,4 @@
 
-// packages
-import { Image } from 'react-image-and-background-image-fade'
-
 // styles
 import '../stylesheets/Intro.css';
 
