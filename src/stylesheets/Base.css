@@ -39,9 +39,9 @@
 
 :root {
     --off-white: #ababab;
-    --color1: #FEEFE5;
-    --color2: #b6c7cb;
-    --color3: #2D3047;
+    --color1: white;
+    --color2: #dde8ea;
+    --color3: #607EAA;
     --color4: #52DEE5;
     --color5: #150301;
 }

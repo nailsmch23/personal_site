@@ -16,14 +16,15 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    width: max-content;
+    width: 100%;
     margin: auto auto auto auto;
-    font-size: xx-large;
+    font-size: xxx-large;
     transition: top ease 0.5s;
+    font-weight: lighter;
 }
 
 .section_container:hover .section_title {
-    top: 20%;
+    top: 15%;
 }
 
 .section_container:hover .section_content_container {
@@ -35,7 +36,7 @@
 .section_content_button {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    margin: 0 15%;
+    margin: 0 auto;
     text-align: left;
     font-size: large;
 }
@@ -43,24 +44,29 @@
 .section_content_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 50%;
-    margin-top: 40%;
+    height: 60%;
+    width: 84%;
+    margin: 23% 8% 0 8%;
     grid-template-rows: repeat(3, 1fr);
+    column-gap: 12%;
+    row-gap: 12%;
     opacity: 0;
 }
 
 
 .section_content_image {
-    display: inline-block;
-    height: 1.5em;
-    margin: 0 0.25em;
+    display: block;
+    width: 5vw;
+    /*margin: 0 0.25em;*/
 }
 
 
 .section_content_text {
-    display: inline-block;
+    display: block;
     position: relative;
     top: 50%;
+    padding: 1em;
     transform: translateY(-50%);
+    font-size: large;
 }
 
