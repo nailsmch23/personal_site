@@ -6,8 +6,8 @@ import {useState} from 'react';
 import "../stylesheets/Project.css";
 
 //images
-import MenuAppImage from '../images/Menu_App.png'
-import QuotesAPIImage from '../images/Quotes_API.png'
+import MenuAppImage from '../images/Menu_App.gif'
+import QuotesAPIImage from '../images/Quotes_API.gif'
 
 function Portfolio(props) {
 
@@ -27,6 +27,9 @@ function Portfolio(props) {
                     <div className="project_title">
                         {data.project_name}
                     </div>
+                    <div className="project_description">
+                        {data.description}
+                    </div>
                     <div className="project_skills">
                         {data.skills.join(" ・ ")}
                     </div>
@@ -37,15 +40,12 @@ function Portfolio(props) {
             </div>
             {!folded &&
                 <div className="project_details">
-                    <a href={data.site_link} className="project_button project_site_button">
-                        Site ↖︎
-                    </a>
+                    {/*<a href={data.site_link} className="project_button project_site_button">*/}
+                    {/*    Site ↖︎*/}
+                    {/*</a>*/}
                     <a href={data.code_link} className="project_button project_github_button">
                         Code ↖︎
                     </a>
-                    <div className="project_description">
-                        {data.description}
-                    </div>
                     <div className="project_description_bullet_list">
                         {data.description_bullets.map( bullet_data => {
                             return (
@@ -55,7 +55,7 @@ function Portfolio(props) {
                             )
                         })}
                     </div>
-                    <img src={project_images[data.image]} alt='Project' className="project_image" />
+                    <img src={project_images[data.image]} alt='Loading GIF...' className="project_image" />
                 </div>
             }
         </div>

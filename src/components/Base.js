@@ -15,7 +15,7 @@ function Base() {
     return (
         <Router>
         <Routes>
-            <Route exact path='/' exact element={<Main />} />
+            <Route path='/' element={<Main />} />
             <Route path='/portfolio' element={<Portfolio/>} />
             {/*<Route path='/project' element={<Contact/>} />*/}
         </Routes>
