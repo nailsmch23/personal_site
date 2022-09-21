@@ -65,7 +65,7 @@
     border-radius: 115px;
     animation: slidein 3s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 2.3s;
     /*transition: top ease 0.5s;*/
 }
 
