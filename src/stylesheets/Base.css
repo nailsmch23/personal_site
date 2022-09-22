@@ -38,7 +38,7 @@
 }
 
 :root {
-    --off-white: #ababab;
+    --off-white: #fffdf8;
     --color1: white;
     --color2: #dde8ea;
     --color3: #607EAA;
@@ -47,7 +47,7 @@
 }
 
 body {
-    background-color: var(--color1);
+    background-color: var(--color5);
 }
 
 /* width */
@@ -57,7 +57,7 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--color1);
+  background: var(--off-white);
 }
 
 /* Handle */

@@ -1,4 +1,8 @@
 
+.portfolio_container {
+    background-color: var(--off-white);
+}
+
 .portfolio_title {
     width: 100%;
     padding: 1.5em 0;

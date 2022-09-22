@@ -14,7 +14,7 @@ import "../stylesheets/Portfolio.css";
 function Portfolio() {
 
     return (
-        <div>
+        <div className="portfolio_container">
             <NavLink to="/" className="portfolio_back_button">
                 ◁
             </NavLink>

@@ -1,7 +1,7 @@
 
 .section_header_container {
     height: 20vh;
-    background-color: inherit;
+    background-color: var(--off-white);
 }
 
 .section_header_container:hover .section_header_button {
