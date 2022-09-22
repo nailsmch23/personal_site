@@ -1,12 +1,13 @@
 
 // packages
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 // styles
 import '../stylesheets/Intro.css';
 
 // images
 import me_image from '../images/me.jpg'
+import background_image from '../images/background.jpg'
 
 function Intro() {
 
@@ -20,6 +21,11 @@ function Intro() {
         greeting = 'good evening';
     }
 
+    let [loadedMe, setLoadedMe] = useState(false);
+    let [loadedBackground, setLoadedBackground] = useState(false);
+
+    let loaded = () => loadedMe && loadedBackground;
+
     // remove scroll to continue
     // let handleScroll = () => {
     //     console.log('scroll')
@@ -31,8 +37,20 @@ function Intro() {
 
     return (
         <div className="intro_container">
-            <img src={me_image} alt='Neil' className="intro_me_image" />
-            <div className="intro_inner_container">
+            <img
+                src={me_image}
+                onLoad={() => {setLoadedMe(true)}}
+                className={`intro_me_image ${loaded() ? '' : 'preloaded'}`}
+                alt='Neil'
+            />
+            <img
+                src={background_image}
+                onLoad={() => {setLoadedBackground(true)}}
+                className={`intro_background_image ${loaded() ? '' : 'preloaded'}`}
+                alt='Background'
+            />
+            <div className={`intro_background_overlay ${loaded() ? '' : 'preloaded'}`}></div>
+            <div className={`intro_inner_container ${loaded() ? '' : 'preloaded'}`}>
                 <div className="intro_text">
                     { greeting }, my name is
                 </div>
@@ -43,7 +61,7 @@ function Intro() {
                     welcome to my website.
                 </div>
             </div>
-            <div className="intro_continue_container">
+            <div className={`intro_continue_container ${loaded() ? '' : 'preloaded'}`}>
                 ▼ scroll to continue ▼
             </div>
         </div>

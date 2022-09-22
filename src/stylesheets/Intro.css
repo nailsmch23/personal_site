@@ -1,10 +1,15 @@
 
+.preloaded {
+    display: none;
+}
+
 .intro_container {
     height: 100vh;
     /*background-color: var(--grey1);*/
-    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.45);
-    background: url("../images/background.jpg") center center no-repeat;
-    background-size: cover;
+    /*box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.45);*/
+    /*background: url("../images/background.jpg") center center no-repeat;*/
+    /*background-size: cover;*/
+    /*background-color: var(--off-white);*/
     color: white;
 }
 
@@ -41,9 +46,14 @@
 }
 
 .intro_background_image {
-    height: 100vh;
-    /*filter: blur(0.15vmin);*/
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
     object-fit: cover;
+    /*box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.45);*/
 }
 
 .intro_background_overlay {
@@ -52,7 +62,8 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(86, 89, 89, 0.45);
+    z-index: -1;
+    /*background-color: rgba(86, 89, 89, 0.45);*/
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.5);
 }
 
@@ -65,7 +76,7 @@
     border-radius: 115px;
     animation: slidein 3s;
     animation-fill-mode: forwards;
-    animation-delay: 2.3s;
+    animation-delay: 1s;
     /*transition: top ease 0.5s;*/
 }
 
