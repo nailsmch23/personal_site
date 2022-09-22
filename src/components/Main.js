@@ -10,9 +10,12 @@ import section_data from '../data/section_data.json';
 
 // styles
 import '../stylesheets/Main.css';
+import ReactGA from "react-ga";
 
 
 function Main() {
+
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
         <div className="App">

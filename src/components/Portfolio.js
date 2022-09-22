@@ -10,8 +10,11 @@ import portfolio_data from "../data/portfolio_data.json";
 
 // styles
 import "../stylesheets/Portfolio.css";
+import ReactGA from "react-ga";
 
 function Portfolio() {
+
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
     return (
         <div className="portfolio_container">
