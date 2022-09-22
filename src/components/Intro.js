@@ -28,8 +28,7 @@ function Intro() {
     let [loadedMe, setLoadedMe] = useState(false);
     let [loadedBackground, setLoadedBackground] = useState(false);
 
-    // let loaded = () => loadedMe && loadedBackground;
-    let loaded = () => loadedMe;
+    let loaded = () => loadedMe && loadedBackground;
 
     // remove scroll to continue
     // let handleScroll = () => {
