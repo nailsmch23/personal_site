@@ -12,12 +12,16 @@ import background_image from '../images/background.jpg'
 function Intro() {
 
     let hour = new Date().getHours();
-    let greeting = 'a fine day';
-    if (hour < 12) {
+    let greeting;
+    if (hour < 3) {
+        greeting = 'good morning';
+    } else if (hour === 3) {
+        greeting = 'a fine day';
+    } else if (hour < 12) {
         greeting = 'good morning';
     } else if (hour < 18) {
         greeting = 'good afternoon';
-    } else if (hour < 23) {
+    } else {
         greeting = 'good evening';
     }
 

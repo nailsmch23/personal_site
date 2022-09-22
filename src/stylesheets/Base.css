@@ -44,10 +44,11 @@
     --color3: #607EAA;
     --color4: #52DEE5;
     --color5: #150301;
+    --off-black: #0c0c0b;
 }
 
 body {
-    background-color: var(--color5);
+    background-color: var(--off-black);
 }
 
 /* width */
