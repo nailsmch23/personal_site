@@ -1,6 +1,7 @@
 
 .portfolio_container {
     background-color: var(--off-white);
+    height: max(100vh, max-content);
 }
 
 .portfolio_title {
