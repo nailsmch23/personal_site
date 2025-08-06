@@ -1,0 +1,150 @@
+
+.landing {
+    overflow-y: clip;
+    position: relative;
+    overflow-x: clip;
+    height: 100vh;
+    width: 100vw;
+}
+
+.landing_moving {
+    position: relative;
+}
+
+.landing_fixed {
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.landing_placeholder {
+    height: 100vh;
+}
+
+.landing_picture_container {
+    --picture_container_width: 23rem;
+    position: absolute;
+    top: 45vh;
+    transform: translateY(-50%);
+    left: calc(50% - (var(--picture_container_width) / 2));
+    animation: slidein 3.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    height: var(--picture_container_width);
+    width: var(--picture_container_width);
+}
+
+.landing_picture {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.landing_star {
+    width: 23rem;
+    z-index: 2;
+}
+
+.landing_star_backing {
+    background: gold;
+    height: 23rem;
+    width: 23rem;
+    z-index: 2;
+}
+
+.landing_star_outline {
+    --star_width: 42rem;
+    width: var(--star_width);
+    margin: calc((var(--picture_container_width) - var(--star_width)) / 2);
+    z-index: 4;
+    animation: spin;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 40000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 40000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 40000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+}
+
+.landing_me {
+    --me_width: 20rem;
+    width: var(--me_width);
+    margin: 0 calc((var(--picture_container_width) - var(--me_width)) / 2);
+    bottom: 0;
+    z-index: 3;
+}
+
+.landing_me_head {
+    --me_width: 20rem;
+    width: var(--me_width);
+    margin: 0 calc((var(--picture_container_width) - var(--me_width)) / 2);
+    bottom: 0;
+    z-index: 4;
+}
+
+.landing_welcome {
+    position: absolute;
+    width: max-content;
+    top: 45vh;
+    transform: translateY(-50%);
+    left: calc(32% + 115px);
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    text-align: left;
+    font-size: 4vh;
+    font-weight: lighter;
+}
+
+.landing_name {
+    font-family: Montserrat, sans-serif;
+    font-size: 11vh;
+    font-weight: 690;
+    padding-left: 1vw;
+}
+
+.landing_continue {
+    position: absolute;
+    left: 50vw;
+    top: 95vh;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slidein {
+  from { left: calc(50% - (var(--picture_container_width)/2)); }
+  to { left: calc(28% - (var(--picture_container_width)/2)); }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+

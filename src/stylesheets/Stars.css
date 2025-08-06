@@ -1,0 +1,14 @@
+
+.canvas {
+    z-index: 2;
+    background: inherit;
+    height: 100vh;
+    width: 100vw;
+}
+.canvas-fixed {
+    position: fixed;
+}
+.canvas-moving {
+    position: relative;
+}
+

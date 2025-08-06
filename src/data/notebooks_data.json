@@ -1,0 +1,24 @@
+
+[
+  {
+    "id": 0,
+    "title": "Visualizations with Census API",
+    "postdate": "June 18th, 2024",
+    "skills": ["JavaScript", "Observable", "D3"],
+    "description": "Visualizing the U.S. population since 2009 using U.S. Census data",
+    "embedLink": "https://observablehq.com/embed/9562fda494c02d4e?cell=*",
+    "sourceLink": "https://observablehq.com/d/9562fda494c02d4e",
+    "type": "Observable"
+  },
+  {
+    "id": 1,
+    "title": "Yahoo Fantasy Baseball API Fetching",
+    "postdate": "June 23th, 2024",
+    "skills": ["Python", "Pandas", "Jupyter Notebook"],
+    "description": "Fetching current rosters for Yahoo fantasy baseball and converting to a usable format",
+    "embedLink": "/Notebooks/YahooFantasyBaseballAPIFetching.html",
+    "sourceLink": "https://github.com/nailsmch23/fantasybaseballnotebooks/blob/main/YahooFantasyBaseballAPI.html",
+    "type": "Jupyter"
+  }
+]
+

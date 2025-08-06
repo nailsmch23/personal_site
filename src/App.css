@@ -1,42 +1,113 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@media (width > 50.5rem) {
+    .content {
+        width: 44.1875rem;
+        margin-left: calc(50vw - 44.1875rem / 2);
+    }
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@media (width <= 50.5rem) {
+    .content {
+        width: 87.5%;
+        margin-left: calc(50vw - 87.5% / 2);
+    }
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+    min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.content_hidden {
+    display: none;
 }
 
-.card {
-  padding: 2em;
+.title_bar {
+    --title-size: 1.75rem;
+    width: 100%;
+    padding: 3rem 0 1.75rem 0;
 }
 
-.read-the-docs {
-  color: #888;
+.title_bar img {
+    height: calc(var(--title-size) * 0.75);
+    margin-right: calc(var(--title-size) * 0.5);
+}
+
+.title_bar hr {
+    border: 0.046875rem solid;
+    margin: 0;
+}
+
+.title {
+    font-size: var(--title-size);
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    cursor: default;
+}
+
+.tabs_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+
+.tab {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem 0;
+    width: max-content;
+}
+
+.tab_active {
+    font-weight: 900;
+    border-bottom: 0.046875rem solid;
+}
+
+.page {
+    padding: 0.75rem 0.75rem;
+}
+
+.page_item {
+    display: block;
+    margin-bottom: 2.75rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.page_item:hover {
+    /*font-weight: 450;*/
+}
+
+.page h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 850;
+    font-size: 28px;
+    color: #00dbff;
+    margin: 0.125rem 0;
+}
+
+.page_item:hover h1 {
+    font-weight: 900;
+}
+
+.page h2 {
+    display: inline;
+    font-size: 18px;
+    font-weight: 200;
+    margin-right: 1rem;
+    color: black;
+}
+
+.page_item:hover h2 {
+    /*font-weight: 250;*/
+}
+
+.page h3 {
+    display: inline;
+    font-weight: 230;
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+}
+
+.page_item:hover h3 {
+    /*font-weight: 280;*/
 }

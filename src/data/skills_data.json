@@ -1,0 +1,33 @@
+{
+  "skills": [
+    "Python",
+    "JavaScript",
+    "R",
+    "MATLAB",
+    "HTML",
+    "CSS",
+    "SQL",
+    "Django",
+    "React",
+    "Observable",
+    "Pandas"
+  ],
+  "application": [
+    "Python",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Django",
+    "React"
+  ],
+  "scientific": [
+    "Python",
+    "JavaScript",
+    "R",
+    "MATLAB",
+    "SQL",
+    "Pandas",
+    "Observable"
+  ]
+}
+

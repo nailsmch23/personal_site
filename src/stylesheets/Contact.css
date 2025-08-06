@@ -1,0 +1,34 @@
+
+.contact_page {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 0 3rem;
+}
+
+.contact_page h1 {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 3rem;
+}
+
+.contact_page h2 {
+    display: block;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+.contact_page_me_img {
+    display: block;
+    max-height: 10em;
+    border-radius: 5em;
+    background: #beaf96;
+    filter: brightness(1.2);
+    margin-top: 1.25rem;
+}
+
+.contact_page_logo {
+    max-height: 2.5rem;
+    max-width: 2.5rem;
+    margin-right: 2rem;
+}
+

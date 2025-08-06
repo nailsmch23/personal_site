@@ -1,0 +1,28 @@
+
+.notebooks_page {
+
+}
+
+.notebooks_page iframe {
+}
+
+.notebooks_page_button_container {
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    width: 100%;
+    margin-bottom: 0.75rem;
+}
+
+.notebooks_page_button_container a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.notebooks_page_button_container a img {
+    display: inline;
+    height: 1.125rem;
+    vertical-align: bottom;
+}
+

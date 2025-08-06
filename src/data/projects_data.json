@@ -1,0 +1,20 @@
+
+[
+  {
+    "id": 0,
+    "title": "Personal Site",
+    "subtitle": "Website",
+    "skills": ["JavaScript", "React", "HTML", "CSS", "JSON"],
+    "description": "Project & notebook portfolio sprinkled with some fun graphics",
+    "path": "PersonalSite"
+  },
+  {
+    "id": 1,
+    "title": "Menu App",
+    "subtitle": "Web Application",
+    "skills": ["Python", "Django", "JavaScript", "React", "API", "HTML", "CSS"],
+    "description": "Simple web application for ordering and preparing drinks",
+    "path": "MenuApp"
+  }
+]
+
